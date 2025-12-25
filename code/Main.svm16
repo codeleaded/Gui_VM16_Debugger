@@ -1,0 +1,14 @@
+extern say.hello
+
+global _start:
+    call    say.hello
+    ld      r0      num
+    ld      r0      r0
+    mov     $0      r0
+    
+buffer:
+    byte    "Hello World\n" 0
+addr:
+    word    69
+num:
+    word    addr
