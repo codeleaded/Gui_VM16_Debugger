@@ -22,8 +22,8 @@
 #error "Platform not supported!"
 #endif
 
-#define MEMORY_INST_COUNT   30
-#define MEMORY_STACK_COUNT  30
+#define MEMORY_INST_COUNT   35
+#define MEMORY_STACK_COUNT  35
 
 
 VM16 vm;
