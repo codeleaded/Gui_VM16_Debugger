@@ -1,6 +1,0 @@
-global say.hello:
-    mov     $20480  greeting
-    ret
-
-greeting:
-    byte    "Hello World" 10 0
