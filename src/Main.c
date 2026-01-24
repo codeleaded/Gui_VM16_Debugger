@@ -111,7 +111,7 @@ void Update(AlxWindow* w){
     CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY,WHITE,"R1: %d(%x)",vm.registers[1],vm.registers[1]);
     CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY * 2,WHITE,"R2: %d(%x)",vm.registers[2],vm.registers[2]);
     CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY * 3,WHITE,"R3: %d(%x)",vm.registers[3],vm.registers[3]);
-    CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY * 4,WHITE,"FG: %d(%x)",vm.flags.value,vm.flags.value);
+    CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY * 4,WHITE,"FG: %d,%d,%d(%x)",vm.flags.neg,vm.flags.zero,vm.flags.running,vm.flags.value);
     CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY * 5,WHITE,"SP: %d(%x)",vm.sp,vm.sp);
     CStr_RenderAlxFontf(WINDOW_STD_ARGS,GetAlxFont(),GetWidth() - 24 * GetAlxFont()->CharSizeX,GetAlxFont()->CharSizeY * 6,WHITE,"PC: %d(%x)",vm.pc,vm.pc);
     
